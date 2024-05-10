@@ -2,17 +2,14 @@ package com.example.lab_7
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.os.bundleOf
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
-import androidx.navigation.navArgs
 import com.example.lab_7.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private var receivedName: String = "Gurgen"
-    private var receivedSurname: String = "g"
+    private var receivedName: String = ""
+    private var receivedSurname: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
